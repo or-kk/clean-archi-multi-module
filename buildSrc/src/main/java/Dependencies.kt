@@ -17,6 +17,9 @@ object Dependencies {
     const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
     const val coroutinesServices = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:${Versions.coroutines}"
 
+    // Java
+    const val javaInject = "javax.inject:javax.inject:${Versions.javaInject}"
+
     // Google
     const val material = "com.google.android.material:material:${Versions.material}"
 

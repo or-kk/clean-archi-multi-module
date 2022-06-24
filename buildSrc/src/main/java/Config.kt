@@ -14,5 +14,6 @@ object Config {
         const val androidApplication = "com.android.application"
         const val kotlin = "kotlin"
         const val kotlinAndroid = "kotlin-android"
+        const val javaLibrary = "java-library"
     }
 }

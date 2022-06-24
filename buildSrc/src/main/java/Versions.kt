@@ -1,8 +1,12 @@
 object Versions {
     const val gradle = "7.0.3"
+
     //Kotlin
     const val kotlin = "1.6.10"
-    const val coroutines = "1.6.3"
+    const val coroutines = "1.5.2"
+
+    //Java
+    const val javaInject = 1
 
     //AndroidX
     const val coreKtx = "1.6.0"
