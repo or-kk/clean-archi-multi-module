@@ -1,2 +1,2 @@
 rootProject.name = "clean-architecture-multi-module"
-include(":app", ":data", ":domain")
+include(":app", ":data", ":domain", ":presentation")
