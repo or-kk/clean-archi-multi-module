@@ -1,6 +1,8 @@
 plugins {
     id(Config.Plugins.androidApplication)
     id(Config.Plugins.kotlinAndroid)
+    id(Config.Plugins.hiltAndroid)
+    id(Config.Plugins.kotlinKapt)
 }
 
 android {
@@ -56,6 +58,9 @@ dependencies {
     implementation (Dependencies.appCompat)
     implementation (Dependencies.material)
     implementation (Dependencies.constLayout)
+
+    implementation(Dependencies.hilt)
+    kapt(Dependencies.hiltCompiler)
 
     testImplementation(Dependencies.junit)
     androidTestImplementation(Dependencies.androidJunit)

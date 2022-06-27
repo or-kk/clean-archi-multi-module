@@ -1,5 +1,5 @@
 object Versions {
-    const val gradle = "7.0.3"
+    const val gradle = "7.0.4"
 
     //Kotlin
     const val kotlin = "1.6.10"
@@ -15,6 +15,7 @@ object Versions {
 
     //google
     const val material = "1.6.1"
+    const val hilt = "2.40.5"
 
     //Test
     const val junit = "4.13.2"

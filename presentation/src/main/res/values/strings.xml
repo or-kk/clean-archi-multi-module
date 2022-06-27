@@ -1,2 +1,4 @@
 <resources>
+    <string name="app_name" translatable="false">clean-architecture-multi-module</string>
+    <string name="app_name_debug" translatable="false">clean-architecture-multi-module-debug</string>
 </resources>

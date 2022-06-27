@@ -4,6 +4,7 @@ object Dependencies {
         const val kotlinAndroid = "kotlin-android"
         const val androidGradle = "com.android.tools.build:gradle:${Versions.gradle}"
         const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
+        const val hiltGradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt}"
     }
 
     // AndroidX
@@ -22,6 +23,8 @@ object Dependencies {
 
     // Google
     const val material = "com.google.android.material:material:${Versions.material}"
+    const val hilt = "com.google.dagger:hilt-android:${Versions.hilt}"
+    const val hiltCompiler = "com.google.dagger:hilt-compiler:${Versions.hilt}"
 
     const val junit = "junit:junit:${Versions.junit}"
     const val androidJunit = "androidx.test.ext:junit:${Versions.androidJunit}"
