@@ -17,6 +17,7 @@ object Config {
         const val kotlinKapt = "kotlin-kapt"
         const val hiltAndroid = "dagger.hilt.android.plugin"
         const val javaLibrary = "java-library"
+        const val ktlint = "org.jlleitschuh.gradle.ktlint"
     }
 
     object Modules {

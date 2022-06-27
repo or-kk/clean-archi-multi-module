@@ -8,15 +8,30 @@ buildscript {
         classpath(Dependencies.Classpath.androidGradle)
         classpath(Dependencies.Classpath.kotlinGradlePlugin)
         classpath(Dependencies.Classpath.hiltGradlePlugin)
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
     }
+}
+
+plugins {
+    id(Config.Plugins.ktlint) version Versions.ktlint
 }
 
 allprojects {
     repositories {
         google()
         mavenCentral()
+    }
+}
+
+subprojects {
+    apply(plugin = Config.Plugins.ktlint)
+
+    repositories {
+        mavenCentral()
+    }
+
+    configure<org.jlleitschuh.gradle.ktlint.KtlintExtension> {
+        debug.set(true)
+        disabledRules.set(setOf("experimental:package-name", "import-ordering"))
     }
 }
 

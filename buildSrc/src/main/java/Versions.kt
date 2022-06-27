@@ -8,6 +8,8 @@ object Versions {
     //Java
     const val javaInject = 1
 
+    const val ktlint = "10.3.0"
+
     //AndroidX
     const val coreKtx = "1.6.0"
     const val appCompat = "1.3.1"
