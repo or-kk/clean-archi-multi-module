@@ -21,10 +21,18 @@ android {
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
             isDebuggable = true
             buildConfigField("String", "APP_RAW_NAME", """"clean_architecture_multi_module"""")
+
+            manifestPlaceholders["appName"] = "@string/app_name_debug"
+            manifestPlaceholders["appIcon"] = "@mipmap/ic_launcher"
+            manifestPlaceholders["appRoundIcon"] = "@mipmap/ic_launcher_round"
         }
         getByName("release") {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+
+            manifestPlaceholders["appName"] = "@string/app_name"
+            manifestPlaceholders["appIcon"] = "@mipmap/ic_launcher"
+            manifestPlaceholders["appRoundIcon"] = "@mipmap/ic_launcher_round"
         }
     }
     compileOptions {
@@ -40,6 +48,9 @@ android {
 }
 
 dependencies {
+    implementation(project(Config.Modules.data))
+    implementation(project(Config.Modules.domain))
+    implementation(project(Config.Modules.presentation))
 
     implementation(Dependencies.coreKtx)
     implementation (Dependencies.appCompat)

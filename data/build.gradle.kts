@@ -13,6 +13,7 @@ android {
 }
 
 dependencies {
+    implementation(project(Config.Modules.domain))
 
     implementation(Dependencies.coreKtx)
     implementation(Dependencies.appCompat)

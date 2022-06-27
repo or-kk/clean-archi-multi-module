@@ -16,4 +16,10 @@ object Config {
         const val kotlinAndroid = "kotlin-android"
         const val javaLibrary = "java-library"
     }
+
+    object Modules {
+        const val domain = ":domain"
+        const val data = ":data"
+        const val presentation = ":presentation"
+    }
 }
