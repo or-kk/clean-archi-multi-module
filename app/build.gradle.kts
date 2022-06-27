@@ -55,9 +55,9 @@ dependencies {
     implementation(project(Config.Modules.presentation))
 
     implementation(Dependencies.coreKtx)
-    implementation (Dependencies.appCompat)
-    implementation (Dependencies.material)
-    implementation (Dependencies.constLayout)
+    implementation(Dependencies.appCompat)
+    implementation(Dependencies.material)
+    implementation(Dependencies.constLayout)
 
     implementation(Dependencies.hilt)
     kapt(Dependencies.hiltCompiler)

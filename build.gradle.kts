@@ -31,7 +31,7 @@ subprojects {
 
     configure<org.jlleitschuh.gradle.ktlint.KtlintExtension> {
         debug.set(true)
-        disabledRules.set(setOf("experimental:package-name", "import-ordering"))
+        disabledRules.set(setOf("experimental:package-name", "import-ordering", "no-wildcard-imports"))
     }
 }
 
